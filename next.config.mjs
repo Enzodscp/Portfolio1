@@ -1,13 +1,6 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/Portfolio1' : '',
-  assetPrefix: isProd ? '/Portfolio1/' : '',
-  images: {
-    unoptimized: true,
-  },
+  // Pas besoin de basePath ni d'assetPrefix sur Vercel !
 };
 
 export default nextConfig;
